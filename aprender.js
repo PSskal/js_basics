@@ -31,3 +31,33 @@ const car = {
 console.log(car.dueño) // imprimiendo en pantalla en la consla con diccionarios
 console.log(car["dueño"]) // otra forma de accerde a un diccionario
 
+// aprendiendo mapeo y filter
+
+const carros = ["toyota", "bmw", "audi", "kia"]
+carros[0]="corrolla"  // cambiar valor de la matriz lista
+//console.log(carros[carros.length-1])  accder al ultimo valor de la lista
+
+carros.map(nuevo=>(
+    console.log(nuevo)
+))
+
+const numeros = [1, 3, 45, 65, 723, 2, 32, 43, 32]
+const over18 = numeros.filter(mayores)
+function mayores(value){
+    return value > 18
+}
+console.log(over18)
+console.log(numeros)
+
+// metodos  en javascripts
+
+const person = {
+    firstName: "Richard",
+    lastName: "Huallpa",
+    id: 71816636,
+    fullname: function(){
+        return (this.firstName + " " + this.lastName).toUpperCase();
+    }
+}
+
+console.log(person.fullname()) 
