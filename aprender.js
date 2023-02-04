@@ -61,3 +61,59 @@ const person = {
 }
 
 console.log(person.fullname()) 
+
+
+
+// neuevo investigar un poco mas
+
+function suma(p1, p2){
+    console.log(p1 + p2)
+    console.log("como estamos muchachos jajajaja ahora no se que paso")
+}
+
+const fruits = new Map([
+    ["apples", 500],
+    ["bananas", 200],
+    ["oranges", 100]
+]);
+
+for(fruta of fruits){
+    console.log(fruta[1])
+}
+
+
+function Person(nombre, apellido, edad, ojos) {
+    this.nombre = nombre
+    this.apellido = apellido
+    this.edad = edad
+    this.ojos = ojos
+}
+
+const hum1 = new Person("Richard", "huallpa", 21, "marrones")
+
+console.log(hum1)
+
+
+// añadior automaticamente diccionarios a una lista
+
+function Cars(marca, modelo, propietario) {
+    this.marca = marca;
+    this.modelo = modelo;
+    this.propietario = propietario;
+}
+
+var car1 = new Cars("toyota", "hiluxx", "ricardo")
+console.log(car1)
+var cantAutos = prompt("cuantos autos deseas añadir:")
+
+while(contador<cantAutos){
+    let marca = prompt("marca: ");
+    let modelo = prompt("modelos: ");
+    let propietario = prompt("propietario: ");
+    
+    const nuevoauto = new Cars(marca, modelo, propietario);
+    autos.unshift(nuevoauto);
+    contador+=1;
+}
+
+console.log(autos)
